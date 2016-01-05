@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendPhoto"
+        android:src="@drawable/ic_ab_done"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="First Name"
+        android:id="@+id/friendFirstName"
+        android:paddingLeft="10dp"
+        android:paddingBottom="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#1f0300"
+        android:layout_toRightOf="@+id/friendPhoto"
+        android:layout_toEndOf="@+id/friendPhoto" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Last Name"
+        android:id="@+id/friendLastName"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:textColor="#1f0300"
+        android:layout_toEndOf="@+id/friendPhoto"
+        android:layout_toRightOf="@id/friendPhoto"
+        android:layout_below="@+id/friendFirstName"/>
+
+    <TextView
+        android:id="@+id/isFriendOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="is online"
+        android:textColor="#dad7ca"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/friendFirstName"
+        android:layout_alignEnd="@+id/friendFirstName"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:paddingRight="10dp"/>
+
+</RelativeLayout>
